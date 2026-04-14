@@ -1,0 +1,21 @@
+============================================================
+CONTEXTO DEL SISTEMA: GESTIÓN DE RECURSOS DISTRIBUIDOS
+============================================================
+
+1. MODELO DE INTERACCIÓN:
+   - Cliente/Servidor de 2 niveles[cite: 491, 494].
+   - Comunicación Directa: Sin intermediarios entre emisor y receptor[cite: 44, 46].
+
+2. MECANISMO DE COMUNICACIÓN:
+   - Paso de mensajes: Envío y recepción de datos (señales, eventos)[cite: 5, 8].
+   - Unidifusión no persistente: El mensaje se entrega directamente y no se almacena tras su recepción[cite: 102, 109, 134].
+   - Tecnología sugerida: Sockets o MPI[cite: 99, 111, 122].
+
+3. SERVICIOS CLAVE:
+   - Nombres (Páginas Blancas): Para localizar al servidor en la red (ej. DNS)[cite: 521, 533].
+   - Sincronización: Coordinación para gestionar el acceso a recursos compartidos[cite: 31, 142].
+
+4. OBJETIVO PRÁCTICO:
+   - Implementar la lógica para que un Cliente consulte la disponibilidad 
+     de un recurso y lo reserve en el Servidor de forma segura.
+============================================================
